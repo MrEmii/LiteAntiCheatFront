@@ -64,6 +64,11 @@
     border: 0;
 }
 
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 @media screen and (max-width: 5000px) {}
 
 @media screen and (max-width: 980px) {}

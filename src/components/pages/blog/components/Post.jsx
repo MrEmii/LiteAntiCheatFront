@@ -6,6 +6,8 @@ import { faUser, faCalendar, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 import './Post.css';
 
+import $ from 'jquery'
+
 export default class Post extends Component {
     static propTypes = {
         title: PropTypes.string.isRequired,
@@ -17,7 +19,9 @@ export default class Post extends Component {
     }
 
     componentDidMount = () =>{
-        var des = document.getElementById('description');
+        var theDescription = this.props.description.replace(/\n/g, "<br />").replace('Twitter', "<a href=\"https://twitter.com/liteanticheat\">Twitter</a>");
+        
+        document.getElementById('description').innerHTML = theDescription
     }
 
     render() {
@@ -31,7 +35,7 @@ export default class Post extends Component {
                     <div className="pHeader">
                         <p>By {author} {datetime}</p>
                         <h2>{title}</h2>
-                        <h3 id="description">{description}</h3>
+                        <h3 id="description"></h3>
                         <div className="pImage">
                             <img src={images} alt="" />
                         </div>
