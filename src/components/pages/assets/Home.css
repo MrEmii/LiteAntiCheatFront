@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.body .concepts .discord{
+    
+    position: fixed;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.body .concepts{
+    background: #242323;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    min-height: 520px;
+    color: #eeeccc;
+    margin-top: 25px;
+}
+.body .concepts .title{
+    margin-top: 15px;
+}
+.body .concepts .card{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 90%;
+    background: #2e2a2a;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.body .concepts .card:hover{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+
+}
+.item {
+    position: relative;  
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .item img {
+    max-width: 100%;  
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .item:hover img {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+.body .concepts .card .cContainer{
+    padding:0.01em 16px
+    
+}
+
+.body .concepts .card .cContainer::after, .body .concepts .card .cContainer::before{
+    content: "";
+    display:table;
+    clear:both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 5000px) {}
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 830px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 361px) {
+
+    .body .concepts .card{
+        width: 80%;
+    }
+
+    .body .concepts .card .cContainer h4{
+        font-size: 12px;
+    }
+
+    .body .concepts .card .cContainer p{
+        font-size: 10px;
+    }
+
+}

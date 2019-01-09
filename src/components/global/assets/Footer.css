@@ -1,0 +1,83 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #363633;
+    color: antiquewhite;
+    text-align: center;
+
+}
+
+.f-content{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.f-content p{
+    color: antiquewhite;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;   
+}
+
+.f-content ul{
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    overflow: visible;
+}
+.f-content ul li{
+    float: left;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    overflow: visible;
+}
+.f-content ul li ul li{
+    float: initial;
+    color: antiquewhite;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;   
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    overflow: visible;
+}
+.f-content ul li ul li:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.f-content ul li ul li i{
+    margin-right: 5px;
+}
+.f-content ul li ul li a{
+    user-select: none;
+    text-decoration: none;
+    overflow: visible;
+}
+.f-content ul li ul li a:visited{
+    color: antiquewhite;
+    text-decoration: none;
+}
+@media screen and (max-width: 5000px) {}
+
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 830px) {}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 361px) {}

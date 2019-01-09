@@ -1,0 +1,16 @@
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;    
+    margin-bottom: 20px;
+    height: 100%;
+}
+.postContainer .postClass{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
